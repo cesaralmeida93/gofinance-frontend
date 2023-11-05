@@ -1,8 +1,12 @@
 import AppTemplate from "../components/AppTemplate";
+import Card from "../components/Card";
 
 const Home = () => (
   <>
-    Hello
+    <Card 
+      title="Saldo a pagar"
+      value="R$ 10.000,00"
+    />
   </>
 );
 
