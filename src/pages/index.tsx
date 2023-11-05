@@ -1,4 +1,3 @@
-import AppTemplate from "../components/AppTemplate";
 import Card from "../components/Card";
 
 const Home = () => (
