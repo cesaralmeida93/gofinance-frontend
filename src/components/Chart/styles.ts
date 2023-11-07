@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-height: 613;
+  height: 613;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -12,8 +12,8 @@ interface SubtitleProps {
 }
 
 export const SubtitleContainer = styled.div<SubtitleProps>`
-  display: flex;
-  gap: 15;
+  display: flex; 
+  gap: 15px;
 
   div {
     background-color: ${props => props.color};

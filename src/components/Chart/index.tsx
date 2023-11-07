@@ -6,7 +6,7 @@ const subtitleLabel = [{color: "tomato", label: "A pagar"}, {color: "orange", la
 
 const Chart = () => {
   return <Container>
-    <VictoryPie data={[{x: "A pagar", y: 20}, {x: "A receber", y: 80}]} style={{ labels: {display: "none"}}} innerRadius={100} colorScale={["tomato", "orange"]} padAngle={5} />
+    <VictoryPie data={[{x: "A pagar", y: 20}, {x: "A receber", y: 80}]} style={{ labels: {display: "none"}, parent: {width:520}}} innerRadius={100} colorScale={["tomato", "orange"]} padAngle={5} />
     
       
       {subtitleLabel.map((subtitle) => (
