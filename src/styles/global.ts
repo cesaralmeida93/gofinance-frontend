@@ -39,5 +39,21 @@ export default createGlobalStyle `
       font-size: 12px;
       font-weight: 500;
     }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: ${(props) => props.theme.colors.white};
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: ${(props) => props.theme.colors.white};
+    ::-webkit-input-placeholder {
+      color: #4b4747;
+      font-size: 12px;
+      font-weight: 500;
+    }
   }
 `;
