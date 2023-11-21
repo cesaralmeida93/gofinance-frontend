@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import Chart from "../components/Chart";
+import DateInput from "../components/DateInput";
 import { Container, RightSide } from "./styles";
 
 const cardData = [
@@ -21,9 +22,11 @@ const Home = () => (
   <Container>
     <Chart />
     <RightSide>
-      {cardData.map(card => (
+      {/* {cardData.map(card => (
         <Card key={card.title} title={card.title} value={card.value}/>
-      ))}
+      ))} */}
+      <DateInput title="Data inicial" />
+      <DateInput title="Data final" />
       <button>Download</button>
     </RightSide>
   </Container>
