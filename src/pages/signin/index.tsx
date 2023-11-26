@@ -1,4 +1,4 @@
-import { Container, Content } from "./styles";
+import { Container, Content } from "../../styles/signin/signin.styles";
 import Image from "next/image";
 import logo from "../../assets/logo.png"
 import Link from "next/link";

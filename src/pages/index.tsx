@@ -3,7 +3,7 @@ import Chart from "../components/Chart";
 import DateInput from "../components/DateInput";
 import SearchBar from "../components/SearchBar";
 import TableNavbar from "../components/TableNavbar";
-import { Container, RightSide } from "./styles";
+import { Container, RightSide } from "../styles/home/home.styles";
 
 const cardData = [
   {
@@ -22,13 +22,12 @@ const cardData = [
 
 const Home = () => (
   <Container>
-    {/* <Chart /> */}
-    <TableNavbar />
+    <Chart />
     <RightSide>
-      {/* {cardData.map(card => (
+      {cardData.map(card => (
         <Card key={card.title} title={card.title} value={card.value}/>
-      ))} */}
-      {/* <button>Download</button> */}
+      ))}
+      <button>Download</button>
     </RightSide>
   </Container>
 )
